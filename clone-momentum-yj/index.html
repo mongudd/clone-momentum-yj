@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Competible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum-YJ</title>
+  </head>
+
+  <body>
+    <div id="weather" class="hidden">
+      <span></span>
+      <span></span>
+    </div>
+
+    <form id="login-form" class="hidden">
+      <input
+        required
+        type="text"
+        placeholder="What is your name?"
+        maxlength="15"
+        onfocus="this.placeholder=``"
+        onblur="this.placeholder = `What is your name?`"
+      />
+      <button>Log In</button>
+    </form>
+
+    <div id="clock" class="hidden">00:00</div>
+
+    <div id="greeting" class="hidden"></div>
+
+    <div id="todo" class="hidden">
+      <form id="todo-form">
+        <input
+          required
+          id="todo-input"
+          type="text"
+          placeholder="Write To Do and Press Enter"
+          onfocus="this.placeholder=``"
+          onblur="this.placeholder = `Write To Do and Press Enter`"
+        />
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+
+    <div id="quote" class="hidden">
+      <span id="quote-quote"></span>
+      <span id="quote-author"></span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/ba1f8ece1f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/loginForm.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/backgrounds.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
